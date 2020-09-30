@@ -1,0 +1,91 @@
+.mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 1;
+}
+.popdiv,.modifyPopdiv,.selPopdiv {
+    margin: 0 auto;
+    width: 600px;
+    height: auto;
+    background: #fff;
+    position: absolute;
+    left: 340px;
+    top: 90px;
+    z-index: 4;
+    text-align: center;
+    display: none;
+}
+.popdiv .close,.modifyPopdiv .close,.selPopdiv .close{
+    height: 30px;
+}
+.popdiv .close img,.modifyPopdiv .close img,.selPopdiv .close img{
+    padding: 20px 50px 0 0;
+    width: 25px;
+    float: right;
+}
+.popdiv .close img:hover,.modifyPopdiv .close img:hover,.selPopdiv .close img:hover{
+    cursor: pointer;
+}
+.popdiv .form,.modifyPopdiv .form,.selPopdiv .form{
+    margin: 20px 0;
+}
+
+.popdiv .form .items img,.modifyPopdiv .form .items img,.selPopdiv .form .items img{
+    width: 20px;
+    vertical-align: text-top;
+    /* padding: 5px 0; */
+}
+.popdiv .form .items input,.modifyPopdiv .form .items input,.selPopdiv .form .items input{
+    outline: none;
+    /* padding: 5px; */
+    width: 60%;
+    border: 0;
+    border-bottom: 2px solid #b2bec3;
+    padding: 6px 10px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.popdiv .btn,.modifyPopdiv .btn,.selPopdiv .btn{
+    margin-bottom: 15px;
+    width: 150px;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0;
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+}
+.popdiv .btn:hover,.modifyPopdiv .btn:hover,.selPopdiv .btn:hover{
+    cursor: pointer;
+}
+.popdiv select{
+    width: 63%;
+    outline: none;
+    padding: 6px 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 0;
+    border-bottom: 2px solid #b2bec3;
+}
+.modifypop:hover,.selpop:hover{
+    cursor: pointer!important;
+}
+#toggle1{
+    position: absolute;
+    right: 17%;
+    top: 36%;
+    background: url(../images/hide.svg);
+    width:20px ;
+    height: 20px;
+    background-size: cover;
+    cursor: pointer;
+}
+#toggle1.hide{
+    background: url(../images/show.svg);
+    background-size: cover;
+}
